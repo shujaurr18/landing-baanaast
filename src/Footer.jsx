@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <footer className="bg-white py-8 px-4 md:px-8">
+    <footer className="bg-[#F5F5F5] py-8 px-4 md:px-8">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center mb-4 md:mb-0">
           <img
@@ -56,16 +56,16 @@ const Footer = () => {
             <h4 className="font-semibold mb-2">{t("footer.social")}</h4>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-600 hover:text-blue-500">
-                <Icon icon="mdi:linkedin" className="text-2xl" />
+                <Icon  icon="mdi:linkedin" className="text-primary text-2xl" />
               </a>
               <a href="#" className="text-gray-600 hover:text-pink-500">
-                <Icon icon="mdi:instagram" className="text-2xl" />
+                <Icon  icon="mdi:instagram" className="text-primary text-2xl" />
               </a>
               <a href="#" className="text-gray-600 hover:text-blue-400">
-                <Icon icon="mdi:twitter" className="text-2xl" />
+                <Icon  icon="mdi:twitter" className="text-primary text-2xl" />
               </a>
               <a href="#" className="text-gray-600 hover:text-blue-600">
-                <Icon icon="mdi:facebook" className="text-2xl" />
+                <Icon  icon="mdi:facebook" className="text-primary text-2xl" />
               </a>
             </div>
           </div>
