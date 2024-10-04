@@ -1,0 +1,129 @@
+{
+  "header": {
+    "brandName": "BaanSaat",
+    "english": "English",
+    "thai": "ไทย",
+    "solutions": "Solutions",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "getStarted": "Get Started"
+  },
+  "heroSection": {
+    "title": "Sustainable Municipal Action for Responsible Transformation (SMART)",
+    "subtitle": "Empowering Cities with Innovative Smart Solutions for a Greener, Smarter Future.",
+    "exploreSolutions": "Explore Our Solutions",
+    "contactUs": "Contact Us"
+  },
+  "valuesSection": {
+    "ourValues": "Our Values",
+    "description": "At BaanSaat, we are committed to transforming urban landscapes with cutting-edge smart city solutions. Our mission is to create sustainable, efficient, and resilient cities that enhance the quality of life for all residents.",
+    "values": {
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "Committed to environmentally friendly practices and long-term resource stewardship."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Utilize the latest technologies to deliver intelligent and scalable solutions."
+      },
+      "community": {
+        "title": "Community",
+        "description": "Promote and strengthen community participation in urban transformation."
+      },
+      "responsibility": {
+        "title": "Responsibility",
+        "description": "Adhere to ethical standards and responsibility in all our projects."
+      }
+    }
+  },
+  "quoteSection": {
+    "quote": "Building smarter cities for a sustainable tomorrow.",
+    "learnMore": "Learn More"
+  },
+  "whyChooseUsSection": {
+    "title": "Why Choose BaanSaat?",
+    "points": {
+      "point1": {
+        "title": "Enhanced Quality of Life",
+        "description": "Create a lively, efficient, and vibrant environment."
+      },
+      "point2": {
+        "title": "Data-Driven Decision Making",
+        "description": "Use real-time data analytics to inform decision-making and improve city management efficiency."
+      },
+      "point3": {
+        "title": "Improved Efficiency & Sustainability",
+        "description": "Enhance city operations efficiency while promoting environmentally friendly practices."
+      },
+      "point4": {
+        "title": "Community Participation",
+        "description": "Promote community participation and cooperation in urban development."
+      },
+      "point5": {
+        "title": "Advanced Technology Solutions",
+        "description": "Leveraging cutting-edge smart technologies to drive innovation and improve urban infrastructure."
+      }
+    },
+    "discoverMore": "Discover More"
+  },
+  "solutionsSection": {
+    "title": "Our Solutions",
+    "solutions": {
+      "wasteManagement": {
+        "title": "Waste Management",
+        "description": "A waste collection and recycling system that improves efficiency and reduces environmental impact."
+      },
+      "energyManagement": {
+        "title": "Energy Management",
+        "description": "Smart energy solutions that promote the efficient use and utilization of renewable energy."
+      },
+      "transportation": {
+        "title": "Transportation",
+        "description": "Intelligent transportation systems designed to improve traffic and public transport efficiency."
+      },
+      "publicSafety": {
+        "title": "Public Safety",
+        "description": "Advanced monitoring and emergency response technology for the safety of all citizens."
+      }
+    },
+    "discoverMore": "Discover More"
+  },
+  "contactSection": {
+    "title": "Join Us in Building a Smarter, Greener Future.",
+    "contactInfo": {
+      "phone1": "+668 1234 5678",
+      "phone2": "+668 1453 6660",
+      "phone3": "+668 1663 2332",
+      "email": "info@baansaat.com",
+      "address": "123 Smart City Avenue, Bangkok, Thailand"
+    },
+    "contactForm": {
+      "title": "Contact Us for Consultation",
+      "fullName": "Full Name",
+      "emailAddress": "Email Address",
+      "subject": "Subject",
+      "message": "Your Message",
+      "sendMessage": "Send Message"
+    }
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "info": "Info",
+    "social": "Socials",
+    "links": {
+      "home": "Home",
+      "solutions": "Solutions",
+      "testimonials": "Testimonials",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us"
+    },
+    "socials": {
+      "followUs": "Follow us on social media",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "twitter": "Twitter",
+      "facebook": "Facebook"
+    },
+    "rights": "© 2024 BaanSaat. All rights reserved."
+  }
+}
