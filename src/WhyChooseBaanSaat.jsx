@@ -55,7 +55,7 @@ const WhyChooseBaanSaat = () => {
           <img
             src={`${SmartCityIllustration}`}
             alt="Smart City Illustration"
-            className="max-w-[400px] md:max-w-[500px] lg:max-w-[600px] opacity-20 -z-30"
+            className="max-w-[200px] md:max-w-[500px] lg:max-w-[600px] opacity-20 -z-30"
           />
         </div>
       </div>

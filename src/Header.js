@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <header className="bg-white py-3">
-      <div className="max-w-[1440px] mx-auto px-4 flex justify-between items-center">
+      <div className=" mx-auto px-4 flex justify-between items-center">
         {/* Logo Section */}
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-2">
@@ -28,9 +28,9 @@ const Header = () => {
             alt="BaanSaat Logo"
             className="w-8 h-8"
           />
-          <span className="text-[#4CAF50] text-xl">
-            {t("header.brandName")}
-          </span>
+          <span className="hidden md:block text-[#4CAF50] text-xl">
+  {t("header.brandName")}
+</span>
           </div>
                {/* Language Switcher */}
                <div className="flex mr-8">
@@ -60,28 +60,7 @@ const Header = () => {
 
         {/* Language Switcher for Mobile (Visible only on mobile) */}
         <div className="md:hidden flex items-center">
-          <div className="flex">
-            <button
-              onClick={() => changeLanguage("en")}
-              className={`px-4 py-1 rounded-l-full ${
-                activeLanguage === "en"
-                  ? "bg-gradient-to-b from-[#4CAF50] to-[#2196F3] text-white"
-                  : "border"
-              }  text-gray-600 text-sm `}
-            >
-              English
-            </button>
-            <button
-              onClick={() => changeLanguage("thai")}
-              className={`px-4 py-1 rounded-r-full ${
-                activeLanguage === "thai"
-                  ? "bg-gradient-to-b from-[#4CAF50] to-[#2196F3] text-white"
-                  : "border"
-              }  text-gray-600 text-sm `}
-            >
-              {t("header.thai")}
-            </button>
-          </div>
+        
         </div>
 
         {/* Desktop Right Section */}

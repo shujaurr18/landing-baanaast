@@ -5,7 +5,7 @@ import Sustainable from "../src/assets/images/sustainable.png";
 const SmartCitiesBanner = () => {
   const { t } = useTranslation();
   return (
-    <section className="relative h-[50vh] md:h-[60vh] lg:h-[70vh] overflow-hidden">
+    <section className="relative h-[90vh] md:h-[60vh] lg:h-[70vh] overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${Sustainable})` }}
@@ -19,7 +19,7 @@ const SmartCitiesBanner = () => {
             className="text-white text-4xl mr-2 opacity-50"
           />
         </div>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-4xl leading-tight">
+        <h2 className="text-2xl mt-8 md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-4xl leading-tight">
           {t("quoteSection.quote")}
         </h2>
         <div className="flex items-center mt-2">
