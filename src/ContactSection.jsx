@@ -13,7 +13,7 @@ const ContactSection = () => {
           <Phone className="w-6 h-6 text-[#2196F3] mt-1 mr-3" />
           <div>
             <p className="text-[#2196F3] text-sm mb-2">Phone#</p>
-            <p className="text-[#4CAF50] font-medium">+668 1234 5678</p>
+            <p className="text-[#4CAF50] font-medium">+6682-341-5551</p>
           </div>
         </div>
         
@@ -47,7 +47,7 @@ const ContactSection = () => {
           <MapPin className="w-6 h-6 text-[#2196F3] mt-1 mr-3" />
           <div>
             <p className="text-[#2196F3] text-sm mb-2">Address</p>
-            <p className="text-[#4CAF50] font-medium">123 Smart City Avenue, Bangkok, Thailand</p>
+            <p className="text-[#4CAF50] font-medium">55 76, Ko Samui District</p>
           </div>
         </div>
       </div>

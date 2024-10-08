@@ -93,16 +93,16 @@
   "contactSection": {
     "title": "เข้าร่วมกับเราเพื่อสร้างอนาคตที่ชาญฉลาดและเป็นมิตรต่อสิ่งแวดล้อม",
     "contactInfo": {
-      "phone1": "+668 1234 5678",
-      "phone2": "+668 1453 6660",
-      "phone3": "+668 1663 2332",
+      "phone1": "+6682-341-5551",
+      "phone2": "+6682-341-5551",
+      "phone3": "+6682-341-5551",
       "email": "info@baansaat.com",
-      "address": "123 Smart City Avenue, Bangkok, Thailand"
+      "address": "55 76, Ko Samui District"
     },
     "contactForm": {
       "title": "ติดต่อเราเพื่อขอคำปรึกษา",
       "fullName": "ชื่อเต็ม",
-      "emailAddress": "ที่อยู่อีเมล",
+      "emailAddress": "55 76, Ko Samui District",
       "subject": "หัวข้อ",
       "message": "ข้อความของคุณ",
       "sendMessage": "ส่งข้อความ"

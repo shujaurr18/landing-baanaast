@@ -6,7 +6,7 @@ import { Compass, Contact, Phone } from "lucide-react";
 const Hero = () => {
   const { t } = useTranslation();
   return (
-    <section className="relative min-h-[calc(100vh-80px)]">
+    <section className="relative h-[calc(120vh)] sm:h-[calc(100vh-80px)]">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
