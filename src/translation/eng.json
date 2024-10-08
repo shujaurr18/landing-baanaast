@@ -96,7 +96,7 @@
       "phone2": "+66823415551",
       "phone3": "+66823415551",
       "email": "info@baansaat.com",
-      "address": "123 Smart City Avenue, Bangkok, Thailand"
+      "address": "55 76, Ko Samui District, Surat Thani 84320"
     },
     "contactForm": {
       "title": "Contact Us for Consultation",
@@ -109,8 +109,19 @@
       "WhatsApp":"WhatsApp",
       "LineMessenger": "Line Messenger",
       "Email":"Email",
-      "Address":"Address"
+      "Address":"Address",
+      "sending": "Sending..."
 
+
+    },
+    "errorMessage": {
+      "title": "Error",
+      "allFieldsRequired": "Please fill in all fields.",
+      "description": "An error occurred while sending your message. Please try again later."
+    },
+    "successMessage": {
+      "title": "Success",
+      "description": "Your message has been sent successfully. We'll get back to you soon!"
     }
   },
   "footer": {

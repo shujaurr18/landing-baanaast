@@ -19,7 +19,7 @@ const Hero = () => {
       </div>
 
       <div className="relative pt-5 container mx-auto px-6 h-full flex flex-col justify-end items-center text-center">
-      <h1 className="text-3xl sm:text-7xl font-bold text-white mb-6 ">
+      <h1 className="text-4xl sm:text-8xl  font-bold text-white mb-16 ">
           {t("heroSection.SMART")}
         </h1>
         <h1 className="text-2xl sm:text-6xl font-bold text-white mb-6 ">

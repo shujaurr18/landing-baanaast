@@ -30,11 +30,11 @@ const Footer = () => {
                   {t("footer.links.solutions")}
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="text-gray-600 hover:text-green-500">
                   {t("footer.links.testimonials")}
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div>

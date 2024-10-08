@@ -1,9 +1,72 @@
-import React from "react";
+import React, { useState } from "react";
 import { Phone, MessageSquare, Mail, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { notification } from "antd";
+import { initializeApp } from "firebase/app";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
+
+// Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAJekwf6neJZp7RacaV_o1P8tqhr2HLLpw",
+  authDomain: "baansaat-af46e.firebaseapp.com",
+  projectId: "baansaat-af46e",
+  storageBucket: "baansaat-af46e.appspot.com",
+  messagingSenderId: "1093462346618",
+  appId: "1:1093462346618:web:9f574287447fff6a74e4c3",
+  measurementId: "G-EVQHBZ2X5F"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
 const ContactSection = () => {
   const { t } = useTranslation();
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    // Basic form validation
+    if (!formData.fullName || !formData.email || !formData.subject || !formData.message) {
+      notification.error({
+        message: t('contactSection.errorMessage.title'),
+        description: t('contactSection.errorMessage.allFieldsRequired'),
+      });
+      setLoading(false);
+      return;
+    }
+
+    try {
+      await addDoc(collection(db, "contacts"), formData);
+      notification.success({
+        message: t('contactSection.successMessage.title'),
+        description: t('contactSection.successMessage.description'),
+      });
+      setFormData({ fullName: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      notification.error({
+        message: t('contactSection.errorMessage.title'),
+        description: t('contactSection.errorMessage.description'),
+      });
+    }
+    setLoading(false);
+  };
 
   return (
     <section className="py-16 px-4 md:px-8 max-w-7xl mx-auto mt-9">
@@ -59,12 +122,16 @@ const ContactSection = () => {
           <h3 className="text-xl font-medium text-[#2196F3] mb-6">
             {t('contactSection.contactForm.title')}
           </h3>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <div>
                 <label className="block text-sm mb-2">{t('contactSection.contactForm.fullName')}</label>
                 <input
+                required
                   type="text"
+                  name="fullName"
+                  value={formData.fullName}
+                  onChange={handleInputChange}
                   placeholder="Type here..."
                   className="w-full p-3 rounded-lg border border-gray-200 bg-white"
                 />
@@ -72,7 +139,11 @@ const ContactSection = () => {
               <div>
                 <label className="block text-sm mb-2">{t('contactSection.contactForm.emailAddress')}</label>
                 <input
+                required
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
                   placeholder="example@email.com"
                   className="w-full p-3 rounded-lg border border-gray-200 bg-white"
                 />
@@ -81,7 +152,11 @@ const ContactSection = () => {
             <div className="mb-4">
               <label className="block text-sm mb-2">{t('contactSection.contactForm.subject')}</label>
               <input
+              required
                 type="text"
+                name="subject"
+                value={formData.subject}
+                onChange={handleInputChange}
                 placeholder="Type here..."
                 className="w-full p-3 rounded-lg border border-gray-200 bg-white"
               />
@@ -89,6 +164,9 @@ const ContactSection = () => {
             <div className="mb-6">
               <label className="block text-sm mb-2">{t('contactSection.contactForm.message')}</label>
               <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
                 placeholder="Write your message here..."
                 rows="4"
                 className="w-full p-3 rounded-lg border border-gray-200 bg-white"
@@ -96,9 +174,10 @@ const ContactSection = () => {
             </div>
             <button
               type="submit"
+              disabled={loading}
               className="bg-gradient-to-t from-[#4CAF50] to-[#2196F3] text-white px-6 py-3 rounded-full flex items-center justify-center gap-2"
             >
-              {t('contactSection.contactForm.sendMessage')}
+              {loading ? t('contactSection.contactForm.sending') : t('contactSection.contactForm.sendMessage')}
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.5 15L12.5 10L7.5 5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
