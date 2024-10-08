@@ -32,7 +32,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="text-gray-600 hover:text-green-500">
-                  {t("footer.links.testimonial")}
+                  {t("footer.links.testimonials")}
                 </a>
               </li>
             </ul>
@@ -62,7 +62,7 @@ const Footer = () => {
                 <Icon  icon="mdi:instagram" className="text-primary text-2xl" />
               </a>
               <a href="#" className="text-gray-600 hover:text-blue-400">
-                <Icon  icon="mdi:twitter" className="text-primary text-2xl" />
+                <Icon  icon="mdi:alpha-x-circle" className="text-primary text-2xl" />
               </a>
               <a href="#" className="text-gray-600 hover:text-blue-600">
                 <Icon  icon="mdi:facebook" className="text-primary text-2xl" />

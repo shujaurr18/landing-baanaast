@@ -19,6 +19,9 @@ const Hero = () => {
       </div>
 
       <div className="relative pt-5 container mx-auto px-6 h-full flex flex-col justify-end items-center text-center">
+      <h1 className="text-3xl sm:text-7xl font-bold text-white mb-6 ">
+          {t("heroSection.SMART")}
+        </h1>
         <h1 className="text-2xl sm:text-6xl font-bold text-white mb-6 ">
           {t("heroSection.title")}
         </h1>
@@ -26,9 +29,12 @@ const Hero = () => {
         <p className="text-md sm:text-xl text-white mb-10">{t("heroSection.subtitle")}</p>
 
         <div className="flex gap-4 flex-wrap">
-          <button className="px-8 py-3 flex-1 sm:flex-none bg-gradient-to-b from-[#4CAF50] to-[#2196F3] text-white rounded-full hover:from-[#43A047] hover:to-[#1976D2] transition-colors">
+         <a href="#exploreSolutions" >
+          <button 
+            className="px-8 py-3 flex-1 sm:flex-none bg-gradient-to-b from-[#4CAF50] to-[#2196F3] text-white rounded-full hover:from-[#43A047] hover:to-[#1976D2] transition-colors">
             {t("heroSection.exploreSolutions")}
           </button>
+              </a>
 
           <button className="px-8 py-3 flex-1 sm:flex-none text-center justify-center bg-[#424242]/80 text-white rounded-full hover:bg-[#424242]/90 transition-colors flex">
           <span>

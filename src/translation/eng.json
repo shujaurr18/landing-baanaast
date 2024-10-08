@@ -9,7 +9,8 @@
     "getStarted": "Get Started"
   },
   "heroSection": {
-    "title": "Sustainable Municipal Action for Responsible Transformation (SMART)",
+    "SMART":"SMART",
+    "title": "Sustainable Municipal Action for Responsible Transformation",
     "subtitle": "Empowering Cities with Innovative Smart Solutions for a Greener, Smarter Future.",
     "exploreSolutions": "Explore Our Solutions",
     "contactUs": "Contact Us"
@@ -91,9 +92,9 @@
   "contactSection": {
     "title": "Join Us in Building a Smarter, Greener Future.",
     "contactInfo": {
-      "phone1": "+6682-341-5551",
-      "phone2": "+6682-341-5551",
-      "phone3": "+6682-341-5551",
+      "phone1": "+66823415551",
+      "phone2": "+66823415551",
+      "phone3": "+66823415551",
       "email": "info@baansaat.com",
       "address": "123 Smart City Avenue, Bangkok, Thailand"
     },
@@ -103,7 +104,13 @@
       "emailAddress": "Email Address",
       "subject": "Subject",
       "message": "Your Message",
-      "sendMessage": "Send Message"
+      "sendMessage": "Send Message",
+      "Phone":"phone",
+      "WhatsApp":"WhatsApp",
+      "LineMessenger": "Line Messenger",
+      "Email":"Email",
+      "Address":"Address"
+
     }
   },
   "footer": {
@@ -114,6 +121,7 @@
       "home": "Home",
       "solutions": "Solutions",
       "testimonials": "Testimonials",
+      
       "aboutUs": "About Us",
       "contactUs": "Contact Us"
     },

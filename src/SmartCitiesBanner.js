@@ -28,13 +28,8 @@ const SmartCitiesBanner = () => {
             className="text-white text-4xl ml-2 opacity-50"
           />
         </div>
-        <a
-          href="#learn-more"
-          className="mt-8 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-opacity-20 hover:bg-opacity-30 backdrop-filter backdrop-blur-sm transition duration-300"
-        >
-          {t("quoteSection.learnMore")}
-          <Icon icon="mdi:arrow-right" className="ml-2 text-xl" />
-        </a>
+      
+      
       </div>
     </section>
   );

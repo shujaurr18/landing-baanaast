@@ -60,13 +60,6 @@ const WhyChooseBaanSaat = () => {
         </div>
       </div>
       <div className="text-center mt-12">
-        <a
-          href="#discover-more"
-          className="inline-flex items-center px-6 py-3 border border-blue-300 text-blue-500 rounded-full hover:bg-blue-50 transition duration-300"
-        >
-          {t("whyChooseUsSection.discoverMore")}
-          <Icon icon="mdi:arrow-right" className="ml-2" />
-        </a>
       </div>
     </section>
   );

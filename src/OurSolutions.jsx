@@ -54,7 +54,8 @@ const OurSolutions = () => {
   ];
 
   return (
-    <section className="relative py-16 overflow-hidden">
+    <section className="relative py-16 overflow-hidden" 
+    id="exploreSolutions" >
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('/city-background.jpg')" }}
@@ -72,13 +73,8 @@ const OurSolutions = () => {
           ))}
         </div>
         <div className="text-center">
-          <a
-            href="#discover-more"
-            className="inline-flex items-center px-6 py-3 bg-gradient-to-b from-green-400 to-blue-500 text-white rounded-full hover:from-green-500 hover:to-blue-600 transition duration-300"
-          >
-            {t("solutionsSection.discoverMore")}
-            <Icon icon="mdi:arrow-right" className="ml-2" />
-          </a>
+       
+       
         </div>
       </div>
     </section>
