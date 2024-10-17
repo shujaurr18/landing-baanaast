@@ -29,7 +29,7 @@ const Hero = () => {
         <p className="text-md sm:text-xl text-white mb-10">{t("heroSection.subtitle")}</p>
 
         <div className="flex gap-4 flex-wrap justify-center ">
-         <a href="#exploreSolutions"  >
+         <a href="#solutions"  >
           <button 
             className="px-8 py-3 flex-1 sm:flex-none bg-gradient-to-b from-[#4CAF50] to-[#2196F3] text-white rounded-full hover:from-[#43A047] hover:to-[#1976D2] transition-colors">
             {t("heroSection.exploreSolutions")}

@@ -69,7 +69,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contactUs" className="py-16 px-4 md:px-8 max-w-7xl mx-auto mt-9">
+    <section id="contact" className="py-16 px-4 md:px-8 max-w-7xl mx-auto mt-9">
       <h1 className="text-3xl md:text-4xl font-bold text-center text-[#212121] mb-12">
         {t('contactSection.title')}
       </h1>

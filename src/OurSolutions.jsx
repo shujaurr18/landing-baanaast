@@ -55,7 +55,7 @@ const OurSolutions = () => {
 
   return (
     <section className="relative py-16 overflow-hidden" 
-    id="exploreSolutions" >
+    id="solutions" >
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('/city-background.jpg')" }}
